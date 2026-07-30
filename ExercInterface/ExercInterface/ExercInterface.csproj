@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E8807F0-707B-4F45-825F-79D6E5D60DB8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExercInterface</RootNamespace>
+    <AssemblyName>ExercInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Exerc01\Cachorro.cs" />
+    <Compile Include="Exerc01\Gato.cs" />
+    <Compile Include="Exerc01\IAnimal.cs" />
+    <Compile Include="Exerc01\Passaro.cs" />
+    <Compile Include="Exerc02\Circulo.cs" />
+    <Compile Include="Exerc02\IFormaGeo.cs" />
+    <Compile Include="Exerc02\Retangulo.cs" />
+    <Compile Include="Exerc02\Triangulo.cs" />
+    <Compile Include="Exerc03\IReprodutorMultimidia.cs" />
+    <Compile Include="Exerc03\PlayerMp3.cs" />
+    <Compile Include="Exerc03\PlayerStreaming.cs" />
+    <Compile Include="Exerc03\PlayerVideo.cs" />
+    <Compile Include="Exerc04\IProcessadorPagamento.cs" />
+    <Compile Include="Exerc04\ProcessadorBoleto.cs" />
+    <Compile Include="Exerc04\ProcessadorCartaoCredito.cs" />
+    <Compile Include="Exerc04\ProcessadorPayPal.cs" />
+    <Compile Include="Exerc05\Aviao.cs" />
+    <Compile Include="Exerc05\Carro.cs" />
+    <Compile Include="Exerc05\ITransporte.cs" />
+    <Compile Include="Exerc05\Trem.cs" />
+    <Compile Include="Exerc06\INotificador.cs" />
+    <Compile Include="Exerc06\NotificadorEmail.cs" />
+    <Compile Include="Exerc06\NotificadorSMS.cs" />
+    <Compile Include="Exerc06\NotificadorWhatsApp.cs" />
+    <Compile Include="Exerc07\CarrinhoDeCompras.cs" />
+    <Compile Include="Exerc07\IFretavel.cs" />
+    <Compile Include="Exerc07\ProdutoEletronico.cs" />
+    <Compile Include="Exerc07\ProdutoLivro.cs" />
+    <Compile Include="Exerc07\ProdutoMovel.cs" />
+    <Compile Include="Exerc08\IAtacavel.cs" />
+    <Compile Include="Exerc08\ICurador.cs" />
+    <Compile Include="Exerc08\IVoador.cs" />
+    <Compile Include="Exerc08\Pesonagens.cs" />
+    <Compile Include="Exerc09\Exportadores.cs" />
+    <Compile Include="Exerc09\FontesDados.cs" />
+    <Compile Include="Exerc09\GeradorRelatorio.cs" />
+    <Compile Include="Exerc09\IExportador.cs" />
+    <Compile Include="Exerc09\IFonteDados.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

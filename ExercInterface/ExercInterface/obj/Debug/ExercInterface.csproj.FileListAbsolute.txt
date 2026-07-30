@@ -1,0 +1,7 @@
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\obj\Debug\ExercInterface.csprojAssemblyReference.cache
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\obj\Debug\ExercInterface.csproj.CoreCompileInputs.cache
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\bin\Debug\ExercInterface.exe.config
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\bin\Debug\ExercInterface.exe
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\bin\Debug\ExercInterface.pdb
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\obj\Debug\ExercInterface.exe
+C:\Develop\Aula_C\Interface\ExercInterface\ExercInterface\obj\Debug\ExercInterface.pdb
