@@ -12,6 +12,8 @@ using ExercInterface.Exerc06;
 using ExercInterface.Exerc07;
 using ExercInterface.Exerc08;
 using ExercInterface.Exerc09;
+using ExercInterface.ExercFinal;
+
 
 namespace ExercInterface
 {
@@ -19,6 +21,8 @@ namespace ExercInterface
     {
         static void Main(string[] args)
         {
+            ExercFinal();
+            /*
             Exerc01();
             Exerc02();
             Exerc03();
@@ -28,9 +32,49 @@ namespace ExercInterface
             Exerc07();
             Exerc08();
             Exerc09();
-
+            */
             Console.ReadLine();
 
+        }
+
+        private static void ExercFinal()
+        {
+            List<NaveEspacial> frota = new List<NaveEspacial>
+            {
+                new NaveDeCarga("Zepelim Estelar"),
+                new NaveDeCombate("Falcão RubrO"),
+                new NaveDeLuxo("Stellar Groove"),
+                new NaveExploradora("Horizonte de Eventos") 
+            };
+
+            frota[0].Abastecer(50);
+            frota[1].Abastecer(80);
+            frota[2].Abastecer(30);
+            frota[3].Abastecer(100);
+
+            Console.WriteLine("=== DECOLAGEM ===");
+            foreach (var nave in frota)
+            {
+                nave.Decolar(); 
+            }
+
+            PainelDeControle painel = new PainelDeControle();
+            painel.ExibirStatus(frota);
+
+            Console.WriteLine("=== TELETRANSPORTE ===");
+            foreach (var nave in frota)
+            {
+                if (nave is ITeletransportavel naveTeletransportavel)
+                {
+                    naveTeletransportavel.Teletransportar("Sistema Alpha Centauri");
+                }
+            }
+
+            Console.WriteLine("\n=== CENTRAL DE DOCAS ===");
+            CentralDeDocas docas = new CentralDeDocas();
+
+            docas.AutorizarDecolagem(frota[0]); 
+            docas.AutorizarDecolagem(frota[3]); 
         }
 
         private static void Exerc09()
